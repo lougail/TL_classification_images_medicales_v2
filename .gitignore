@@ -3,47 +3,58 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
-
 # Virtual environments
 .env/
 .venv/
 venv/
 ENV/
 env/
+
+# Distribution / packaging
 *.egg-info/
 dist/
 build/
 
-# Jupyter Notebook checkpoints
+# Jupyter Notebook
 .ipynb_checkpoints/
 
-# PyInstaller
-*.spec
-
-# Unit test / coverage reports
+# Unit tests / coverage
 htmlcov/
 .tox/
-.nox/
+.coverage
+.coverage.*
 coverage.*
-.cache
-pytest_cache/
 .pytest_cache/
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# VSCode settings
-.vscode/
-
-# macOS
-.DS_Store
-
 # IDEs
+.vscode/
 .idea/
+*.swp
+*.swo
 
-# Data folder (ton cas spécifique)
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Project specific
 data/
+mlruns/
+models/
+*.h5
+*.hdf5
+*.ckpt
+*.pth
+logs/
+wandb/
+tensorboard/
+
+# Environment files
+.env
+.env.local
+requirements.txt.lock
+poetry.lock
+
+# Temporary files
+*.tmp
+*.temp
+*.log
