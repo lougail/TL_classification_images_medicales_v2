@@ -37,7 +37,8 @@ coverage.*
 Thumbs.db
 
 # Project specific
-data/
+data/*
+!data/.gitkeep
 mlruns/
 models/
 *.h5
